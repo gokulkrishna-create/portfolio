@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Gokul | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0f0f0f;
+      color: #e0e0e0;
+      line-height: 1.6;
+    }
+
+    nav {
+      background: #111;
+      padding: 15px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #2a2a2a;
+      position: sticky;
+      top: 0;
+    }
+
+    nav h2 {
+      color: #fff;
+    }
+
+    nav a {
+      color: #aaa;
+      margin-left: 20px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 70px 10%;
+      text-align: center;
+    }
+
+    h2 {
+      margin-bottom: 40px;
+      color: #fff;
+    }
+
+    /* HERO */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid #888;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+    }
+
+    .hero p {
+      color: #aaa;
+      margin: 10px 0;
+    }
+
+    .btn {
+      padding: 10px 25px;
+      border: 1px solid #888;
+      color: #fff;
+      text-decoration: none;
+      margin-top: 15px;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #888;
+      color: #000;
+    }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+    }
+
+    .skill {
+      border: 1px solid #2a2a2a;
+      padding: 15px;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    .skill:hover {
+      background: #1a1a1a;
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .project {
+      border: 1px solid #2a2a2a;
+      padding: 20px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .project:hover {
+      transform: translateY(-5px);
+      background: #1a1a1a;
+    }
+
+    .project h3 {
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .project p {
+      color: #aaa;
+      font-size: 0.95rem;
+    }
+
+    .project a {
+      display: inline-block;
+      margin-top: 10px;
+      color: #ccc;
+      text-decoration: none;
+      border-bottom: 1px solid #555;
+    }
+
+    .project a:hover {
+      color: #fff;
+      border-color: #fff;
+    }
+
+    /* CONTACT */
+    .contact a {
+      color: #ccc;
+      text-decoration: none;
+      border-bottom: 1px solid #555;
+    }
+
+    .contact a:hover {
+      color: #fff;
+      border-color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      border-top: 1px solid #2a2a2a;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <h2>Gokul</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <img src="gokul.jpg" alt="Gokul" class="profile">
+
+    <h1>Gokul</h1>
+
+    <p>Aspiring Software Developer | Data Visualization Enthusiast</p>
+
+    <p style="font-size:14px; color:#888;">
+      Open to Internships • Bangalore • Available Immediately
+    </p>
+
+    <a href="gokulresume.pdf" class="btn" download>Download Resume</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>
+      I am a BCA student passionate about web development, algorithms,
+      and data visualization. I enjoy building real-world projects and
+      continuously improving my technical and problem-solving skills.
+      I am currently seeking internship opportunities to gain industry experience.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">Python</div>
+      <div class="skill">Data Visualization</div>
+      <div class="skill">Matplotlib</div>
+      <div class="skill">Pandas</div>
+      <div class="skill">Git & GitHub</div>
+      <div class="skill">Algorithms</div>
+      <div class="skill">C Programming</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+
+      <div class="project">
+        <h3>Portfolio Website</h3>
+        <p>Responsive personal portfolio built using HTML and CSS with dark professional UI.</p>
+        <a href="https://github.com/gokulkrishna-create/portfolio" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project">
+        <h3>Data Visualization Dashboard</h3>
+        <p>Analyzed and visualized datasets using Python, Pandas, and Matplotlib charts.</p>
+        <a href="https://github.com/gokulkrishna-create/dataviz" target="_blank">View on GitHub</a>
+      </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+
+    <p>Email:
+      <a href="mailto:gokul@email.com">gokul2004deepak@email.com</a>
+    </p>
+
+    <p>LinkedIn:
+      <a href="https://www.linkedin.com/in/gokul-krishna-b6b5b5227/" target="_blank">
+        https://www.linkedin.com/in/gokul-krishna-b6b5b5227/
+      </a>
+    </p>
+
+    <p>GitHub:
+      <a href="https://github.com/gokulkrishna-create" target="_blank">
+        https://github.com/gokulkrishna-create
+      </a>
+    </p>
+
+  </section>
+
+  <footer>
+    © 2026 Gokul. All rights reserved.
+  </footer>
+
+</body>
+</html>
